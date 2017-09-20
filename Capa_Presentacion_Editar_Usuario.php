@@ -40,7 +40,7 @@ include 'Seguridad.php';
 <br>
   <?php
     class Usuario{
-  	 public function EditarU($BdCod_Usuario){
+     public function EditarU($BdCod_Usuario){
       include ('ConexionBd.php');
       $BdCod_Usuario =$_POST['Editar'];
       $sql = "SELECT * FROM usuario WHERE Cod_Usuario = '$BdCod_Usuario'";
@@ -78,17 +78,17 @@ include 'Seguridad.php';
         <div>
           <label id="oculto">Nombres</label><br/>  
           <img id="small" src="images/Username1.png"/>    
-          <input type="text" name="Nombres" placeholder="Ingrese nombres"  value="<?php echo $BdNombres; ?>" required/>
+          <input type="text" name="Nombres" placeholder="Ingrese nombres" pattern="[A-Za-z]{4,50}" value="<?php echo $BdNombres; ?>" required/>
         </div>
         <div>
           <label id="oculto">Apellidos</label><br/>  
           <img id="small" src="images/Username1.png"/>    
-          <input type="text" name="Apellidos" placeholder="Ingrese apellidos"  value="<?php echo $BdApellidos; ?>" required />
+          <input type="text" name="Apellidos" placeholder="Ingrese apellidos" pattern="[A-Za-z]{4,50}" value="<?php echo $BdApellidos; ?>" required />
         </div>
         <div>
           <label id="oculto">Documento</label><br/>  
           <img id="small" src="images/Documento1.png"/>    
-          <input type="text" name="Documento" placeholder="Ingrese su documento"  value="<?php echo $BdDocumento; ?>" maxlength="10" required/>
+          <input type="text" name="Documento" placeholder="Ingrese su documento" pattern="[0-9]{8,12}" value="<?php echo $BdDocumento; ?>" maxlength="10" required/>
         </div>
         <div>
           <label id="oculto">Celular</label><br/>  
@@ -100,11 +100,11 @@ include 'Seguridad.php';
           <img id="small" src="images/@1.png"/>    
           <input type="Email" name="Correo" placeholder="Ingrese correo" required value="
           <?php echo $BdCorreo; 
-  	     	}
+          }
           }
           $Nuevo=new Usuario();
           $Nuevo -> EditarU($_POST["Editar"]);
-  	     	?>"  />
+          ?>"  />
         </div>
         <div>
           <br>

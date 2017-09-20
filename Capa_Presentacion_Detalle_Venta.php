@@ -5,16 +5,16 @@ include 'Seguridad.php';
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <!--  
-    TItulo Proyecto Empresa 
+    <!--
+    TItulo Proyecto Empresa
     =============================================
     -->
-    <title>Detalle</title>
+    <title>Detalle factura</title>
     <!--  Hojas de estilo predeterminadas-->
     <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Hoja de estilo principal y archivo de color-->
     <link rel="stylesheet" type="text/css" href="css/Contenido.css"/>
-       <link rel="stylesheet" type="text/css" href="css/Tablas.css"/>
+    <link rel="stylesheet" type="text/css" href="css/Tablas.css"/>
 </head>
 
 <body>
@@ -22,9 +22,9 @@ include 'Seguridad.php';
       <div class="page-loader">
         <div class="loader">Cargando...</div>
       </div>
-    </main>  
+    </main>
 
-<!-- Menú-->  
+<!-- Menú-->
       <?php
       include ("Menu_Admin.php");
       ?>
@@ -37,70 +37,70 @@ include 'Seguridad.php';
        <img src="images/sales.png" />
 
        <?php
-       session_start();
-		class Stock{
-		public function MostrarS($Ver){		
-		include('ConexionBd.php');
-	    $cont="0";
-        echo "<fieldset>"; 
-	    echo "<legend><h1><center>Detalle de venta</center></h1></legend>";
-	    $sql = "SELECT * FROM detallefactura WHERE Cod_Detalle_Factura = '$Ver' ";
-	    if(!$result = $bd->query($sql)){
-		die('Datos no encontrados!!! [' . $bd->error . ']');
-	    }
-	 
-	    echo "<center>";
-	    echo "<table width=900 border=0 id=tablaGV>";
-		 echo "<tr>";
-		 echo"<th align=center>Numero factura</th>";
+      
+  		  class Stock{
+  		  public function MostrarS($Ver){
+  		  include('ConexionBd.php');
+  	    $cont="0";
+        echo "<fieldset>";
+  	    echo "<legend><h1><center>Detalle de venta</center></h1></legend>";
+  	    $sql = "SELECT * FROM detallefactura WHERE Cod_Detalle_Factura = '$Ver' ";
+  	    if(!$result = $bd->query($sql)){
+  		  die('Datos no encontrados!!! [' . $bd->error . ']');
+  	    }
+
+	      echo "<center>";
+	      echo "<table width=900 border=0 id=tablaGV>";
+		    echo "<tr>";
+		    echo"<th align=center>Numero factura</th>";
         echo"<th align=center>Codigo producto</th>";
         echo"<th align=center>Cantidad</th>";
         echo"<th align=center>Precio</th>";
-		echo "<th align=center>SubTotal</th>";
-		echo"</tr>";
-		echo "</center>";
-	
+    		echo "<th align=center>SubTotal</th>";
+    		echo"</tr>";
+    		echo "</center>";
+
         /**/
 	    while($row = $result->fetch_assoc()){
 	    $BdCod_Detalle_Factura = stripslashes($row["Cod_Detalle_Factura"]);
-	    $BdFk_Cod_Productos = stripslashes($row["Fk_Cod_Productos"]);	
+	    $BdFk_Cod_Productos = stripslashes($row["Fk_Cod_Productos"]);
 	    $BdFk_Cod_Productos=str_replace(' ','</br>',$BdFk_Cod_Productos);
-	    $BdCantidad = stripslashes($row["Cantidad"]);	
+	    $BdCantidad = stripslashes($row["Cantidad"]);
 	    $BdCantidad=str_replace(' ','</br>',$BdCantidad);
-	    $BdPrecio = stripslashes($row["Precio"]);	
+	    $BdPrecio = stripslashes($row["Precio"]);
 	    $BdPrecio=str_replace(' ','</br>',$BdPrecio);
 	    $BdSubtotal = stripslashes($row["SubTotal"]);
 	    $BdSubtotal=str_replace(' ','</br>',$BdSubtotal);
-        
+
         /*Impresion de los datos de la bd*/
 	    echo"<tr>";
 	    echo" <td id='td1' align=center>$BdCod_Detalle_Factura</td>";
 	    echo" <td  id='td1' align=center>$BdFk_Cod_Productos</td>";
-		echo" <td  id='td1' align=center>$BdCantidad</td>";
-		echo"<td  id='td1' align=center>$BdPrecio</td>";
-		echo"<td  id='td1' align=center>$BdSubtotal</td>";
-		echo"</tr>";
+  		echo" <td  id='td1' align=center>$BdCantidad</td>";
+  		echo"<td  id='td1' align=center>$BdPrecio</td>";
+  		echo"<td  id='td1' align=center>$BdSubtotal</td>";
+  		echo"</tr>";
 	    $cont++;
 	    }
-		echo ("</table>");
-		echo ("$cont Registros encontrados </br>");
-		
-		if($cont=="0"){ 
-		echo("No se encontraron datos!");
-		}
-	    echo "</fieldset>";  
-		}
-		}
+  		echo ("</table>");
+  		echo ("$cont Registros encontrados </br>");
+
+		  if($cont=="0"){
+		  echo("No se encontraron datos!");
+		  }
+  	    echo "</fieldset>";
+  		}
+		  }
 	    $Nuevo=new Stock();
-        $Nuevo -> MostrarS($_POST["Ver"]);
-		
+      $Nuevo -> MostrarS($_POST["Ver"]);
+
 	?>
     </td>
   </tr>
 </table>
 
 
-<!--  
+<!--
     JavaScripts
     =============================================
     -->

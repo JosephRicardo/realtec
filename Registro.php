@@ -28,7 +28,7 @@
 
     <!-- Hoja de estilo principal y archivo de color-->
     <link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/Registro.css"/>
+    <link rel="stylesheet" type="text/css" href="css/Registro.css"/>
     </head>
 <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
@@ -38,8 +38,8 @@
       
       <!-- Menú-->
   
-		<?php
-			include ("Menu.php");
+        <?php
+            include ("Menu.php");
         ?>
         
    <!--Finish_Menú-->
@@ -60,35 +60,35 @@
        <select name="Roles" id="Roles" required>
               <option value = ''>Seleccione Rol...</option>
               <?php
-			  include('ConexionBd.php');
-			  $sql = "SELECT * FROM roles";
-			  if(!$result = $bd ->query($sql))
-			  {
-				die('Datos no encontrados!!!['.$bd->error.']'); 	  
-			  }
-			  while($row = $result->fetch_assoc())
-			  {
-				$BdCod_Roles  = stripslashes($row["Cod_Roles"]);
-		  		$BdRoles  = stripslashes($row["Roles"]);
-				echo "<option value = '$BdCod_Roles'>$BdRoles</option>";
-			  }
-			  ?>
-			  </select> <br>
+              include('ConexionBd.php');
+              $sql = "SELECT * FROM roles";
+              if(!$result = $bd ->query($sql))
+              {
+                die('Datos no encontrados!!!['.$bd->error.']');       
+              }
+              while($row = $result->fetch_assoc())
+              {
+                $BdCod_Roles  = stripslashes($row["Cod_Roles"]);
+                $BdRoles  = stripslashes($row["Roles"]);
+                echo "<option value = '$BdCod_Roles'>$BdRoles</option>";
+              }
+              ?>
+              </select> <br>
         
         
         <label id="oculto">Nombres</label><br/>  
         <img id="small" src="images/Username.png"/>    
-        <input type="text" name="Nombres" placeholder="Ingrese nombres" required />
+        <input type="text" name="Nombres" placeholder="Ingrese nombres" pattern="[A-Za-z]{4,50}" required />
         <br/>
         
         <label id="oculto">Apellidos</label><br/>  
         <img id="small" src="images/Username.png"/>    
-        <input type="text" name="Apellidos" placeholder="Ingrese apellidos" required />
+        <input type="text" name="Apellidos" placeholder="Ingrese apellidos" pattern="[A-Za-z]{5,50}" required />
         <br/>
         
           <label id="oculto">Documento</label><br/>  
         <img id="small" src="images/Documento.png"/>    
-        <input type="text" name="Documento" placeholder="Ingrese documento" maxlength="10" required />
+        <input type="text" name="Documento" placeholder="Ingrese documento" maxlength="10" pattern="[0-9]{1,12}" required />
         <br/>
 
         

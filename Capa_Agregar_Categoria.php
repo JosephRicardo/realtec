@@ -35,7 +35,7 @@ include 'Seguridad.php';
        <legend>Agregar Catagoria</legend>
        <form id="EditarDatos" method="POST" name="FORM1" action="Capa_Negocio_Agregar_Categoria.php" target="_top" >
         <div id="Tabla">
-          <input type="text" name="Categoria"  required id="Categoria" placeholder="Ingrese nueva categoria" title="Agregar categoria" />
+          <input type="text" name="Categoria"  required id="Categoria" placeholder="Ingrese nueva categoria" pattern="{1,30}" required title="Agregar categoria" />
           <br>
           </br>
           <input type="submit" name="btnCategoria" id="btnCategoria" value='Agregar' />
@@ -61,4 +61,5 @@ include 'Seguridad.php';
     <script src="assets/js/main.js"></script>
     <script src="assets/js/autoincrement.js"></script>
 </body>
+</html>
 </html>

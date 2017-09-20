@@ -50,7 +50,7 @@
 
           <label id="oculto">Usuario</label><br/>
            <img id="small" src="images/Username.png"/>
-           <input type="text" name="User" placeholder="Ingrese su Documento" required/>
+           <input type="text" name="User" placeholder="Ingrese su Documento" pattern="[0-9]{1,11}" required="required"/>
            <br/>
           <label id="oculto">Contraseña</label><br/>
            <img id="small" src="images/Pass.png"/>

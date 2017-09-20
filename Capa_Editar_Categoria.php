@@ -54,9 +54,9 @@ include 'Seguridad.php';
             <input type="hidden" name="Cod_Categoria" value="<?php echo $BdCod_Categoria ?>" />
            </div>
            <div> 
-            <input type="text" name="Categoria"  required id="Categoria" placeholder="Ingrese nueva categoria" value="
-            <?php echo $BdCategoria; 
-            }
+            <input type="text" name="Categoria" id="Categoria" required placeholder="Ingrese nueva categoria" value=" <?php echo $BdCategoria;  }
+           
+           
             }
             $Nuevo=new Categoria();
             $Nuevo -> EditarC($_POST["Editar"]);
