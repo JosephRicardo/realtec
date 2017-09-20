@@ -1,0 +1,77 @@
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: scrollbar;
+}
+
+body{
+	margin:0;
+	padding:0;
+    background-image:url(../images/Fondo1.jpg);
+	font: 400 12px/1.8 "Open Sans", sans-serif;
+	/* [disabled]color: #666; */
+	-webkit-font-smoothing: antialiased;
+}
+
+#container{
+	display:block;	
+	background:#ddf1f9;
+}
+	
+#menubar{
+    width:80%;
+	height:100px;
+	margin: 0 auto;
+	margin-left:184px;
+	margin-right:184px;
+	margin-top:0px;
+	padding:5px;
+	background:#ddf1f9;
+}
+
+#logo{
+	cursor:pointer;
+	height:80px;
+	width:25%;
+	padding:5px;
+	background:#ddf1f9;
+	float:left;
+	
+}
+
+#login_container{
+	cursor:pointer;
+	height:80px;
+	width:25%;
+	padding:5px;
+	background:#ddf1f9;
+	float:right;
+}
+
+div {
+    display: block;
+}
+
+/* Caption */
+.titan-caption {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.titan-caption {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.caption-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+

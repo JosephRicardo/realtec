@@ -1,0 +1,97 @@
+#btneliminar{
+	width:25px;
+	height:25px;
+	background-image:url(../images/Eliminar.png);
+	background-color:transparent;
+	background-repeat:no-repeat; 
+	border-style:none;
+	padding:0px;
+	margin-top: 2px;
+	cursor:pointer;
+}
+
+#BtnVenta{
+	width:100px;
+	height:25px;
+	border-radius:5px;
+}
+
+#tabla {
+	
+    font-family:font-alt mb-40 titan-title-size-4;
+    width:500px;
+	height:auto;
+	background:#41C2E9;
+	border:0;
+	font-size:15px;	
+}
+
+
+#tabla td, #customers th {
+  
+    padding: 10px;
+	border:0;
+	width:auto;
+	
+}
+
+#tabla tr:nth-child(even){
+	background-color:#41C2E9;
+}
+
+#tabla th {
+    padding:10px;
+	border:0;
+    background-color:#37aaed;
+    color: white;
+	font-size:15px;
+	
+}	
+
+input[type=checkbox]{
+
+	transform: scale(1.5);
+	border:#000;
+
+}
+
+#tabla #td1{
+	background-color:#41C2E9;
+	height:10px;
+	padding:5px;
+}
+
+
+input[type=submit]{
+
+	transform: scale(1.5);
+	border:#000;
+    cursor:pointer;
+}
+
+input[type=button]{
+
+	transform: scale(1.5);
+	border:#000;
+	cursor:pointer;
+
+}
+
+input[type=text]{
+  border: 1px solid #DBE1EB;
+  font-size:13px;
+  font-family: Arial, Verdana;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  max-width:100px;
+  max-height:5px;
+}
+
+label #fecha{
+	text-align:left;
+}

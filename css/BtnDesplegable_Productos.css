@@ -1,0 +1,29 @@
+ul, ol {
+    list-style: none;
+}
+
+.principal li a {
+    background-color: #99E6E6;
+    text-decoration: none;
+    color: black;
+    padding: 5px 8px;
+    display: block;
+}
+
+.principal li a:hover {
+    background-color: #5CD6F5;
+}
+
+.principal>li {
+    float: left;
+}
+
+.principal li ul {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+
+.principal li:hover>ul {
+    display: block;
+}

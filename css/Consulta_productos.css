@@ -1,0 +1,88 @@
+body{
+	margin:0px;
+	background: none;
+	
+	
+}
+
+.Container{
+	width:600px;
+	height:220px;
+	background-color:#FFF;
+	margin:auto;
+	background-color:#BCBCBC;
+	margin-top:100px;
+	border-radius:3%;
+}
+
+
+
+input{
+	width:300px;
+	height:35px;
+	font-size:16px;
+	margin-bottom:0px;
+	padding-left:10px;
+	margin-top:-5px;
+	border-color:trasparent;
+	alignment-adjust:central;
+	
+	
+
+}
+
+
+input#btnCodigop{
+	
+	width:200px;
+	height:35px;
+	font-size:16px;
+	margin-bottom:0px;
+	padding-left:10px;
+	margin-top:-5px;
+	border-color:trasparent;
+	
+	
+
+}
+
+input#btnNombrep{
+	
+	width:200px;
+	height:35px;
+	font-size:16px;
+	margin-bottom:0px;
+	padding-left:10px;
+	margin-top:-5px;
+	border-color:trasparent;
+	
+	
+
+}
+
+#select#Categoria
+{
+ border-radius: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  padding: 8px 37px;
+  background:#818BD1;
+}
+
+#btnCodigop{
+
+
+}
+
+#btnNombrep{
+
+ border-radius: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  padding: 8px 37px;
+  background:#818BD1;
+}

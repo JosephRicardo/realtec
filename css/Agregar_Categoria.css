@@ -1,0 +1,50 @@
+#btnEliminar{
+	width:25px;
+	height:25px;
+	background-image:url(../images/Eliminar.png);
+	background-color:transparent;
+	background-repeat:no-repeat; 
+	border-style:none;
+	padding:0px;
+	margin-top: 2px;
+}
+
+#tabla {
+	
+    font-family:font-alt mb-40 titan-title-size-4;
+    width:600px ;
+	height:auto;
+	background:#41C2E9;
+	border:0;
+	font-size:15px;
+	border-collapse: collapse;	
+}
+
+#tabla td, #customers th {
+  
+    padding: 10px;
+	border:1;
+	width:auto;
+	
+}
+
+#tabla tr:nth-child(even){
+	background-color:#41C2E9;
+}
+
+#tabla tr:hover {
+	background-color: #000;
+	color:#FFF;
+	border:3px;
+	background-color: rgba(52,73,94,.7);
+}
+
+#tabla th {
+    padding:10px;
+	border:1;
+    background-color:#37aaed;
+    color: white;
+	
+}
+
+

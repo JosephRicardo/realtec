@@ -1,0 +1,53 @@
+ul, ol{
+	list-style: none;
+	
+	
+}
+
+
+
+.principal li a{
+	background-color: #99E6E6;
+	text-decoration: none;
+	color: black;
+	padding: 5px 8px;
+	display: block;
+	border-radius: 10px;
+	
+	
+ 
+}
+.principal li a:hover{
+	background-color: #5CD6F5;
+	
+	
+	
+}
+
+.principal > li{
+	float: left;
+	
+	
+}
+
+.principal li ul{
+	display: none;
+	position: absolute;
+	min-width: 100px;
+		
+	
+}
+
+.principal li:hover > ul{
+	display: block;
+	
+}
+
+img{
+	padding: 0px 5px;
+	height: 10px;
+	
+}
+
+
+

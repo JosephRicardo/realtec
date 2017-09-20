@@ -1,0 +1,90 @@
+body{
+	margin:0px;
+	background-image:url(../images/Fondo1.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
+	font-size-adjust: 100%;
+}
+
+.Container{
+	width:450px;
+	height:85%;
+	text-align:center;
+	background-color:blue;
+	margin:auto;
+	background-color: rgba(52,73,94,.7);
+	margin-top:100px;
+	border-radius:3%;	
+}
+
+.Container img{
+	width:120px;
+	height:120px;
+	margin-top:-60px;
+	margin-right:13px;
+}
+
+input{
+	width:300px;
+	height:35px;
+	font-size:16px;
+	margin-bottom:0px;
+	padding-left:5px;
+	margin-top:-5px;
+
+}
+
+#small{
+    margin:-8px auto;
+	width:25px;
+	height:25px;	
+}
+
+
+
+#btn{
+	width:90px;
+	height:30px;
+	font-size:16px;
+	background-color:#f2f2f2;
+	border-radius:8px;
+	transition-duration:.4s;
+	position: absolute;
+	margin-top:1px;
+	margin-left: -40px;
+}
+
+#btn:hover{
+	width:110px;
+	height:35px;
+	font-size:18px;
+	background-color:#f2f2f2;
+	border-radius:8px;
+	position: absolute;
+	margin-top:1px;
+	margin-left: -43px;
+}
+
+label{
+	position:relative;
+	color:#FFF;
+}
+
+#oculto{
+ 	visibility:hidden;
+}
+
+
+select{
+	height: 30px;
+	width: 150px;
+	border-radius:8px;
+}
+
+
+
+
+
+
+
+

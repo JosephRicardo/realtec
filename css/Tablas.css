@@ -1,0 +1,246 @@
+body {
+    background: none;
+    width: auto;
+    height: auto;
+}
+
+#btneliminar {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/Eliminar.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+    padding: 0px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+#btnEditar {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/Editar.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+    padding: 0px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+#btnEditarC {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/Clave.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+    padding: 0px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+#btneliminarP {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/Eliminar.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+    padding: 0px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+#btneditarP {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/Editar.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+    padding: 0px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+#btnagregarP {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/Agregar.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+    padding: 0px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+#btnagregar {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/Agregar.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+    padding: 0px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+#btnVer {
+    width: 33px;
+    height: 28px;
+    background-image: url(../images/ver1.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+    padding: 0px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+#btnagregarPV {
+    width: 33px;
+    height: 28px;
+    background-image: url(../images/Agregar.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-style: none;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.divTable {
+    font-family: font-alt mb-40 titan-title-size-4;
+    width: 600px !important;
+    height: auto;
+    background: #41C2E9;
+    font-size: 15px;
+    border-collapse: collapse;
+    display: table;
+}
+
+.divTableRow {
+    padding: 10px;
+    border: 0;
+    width: auto;
+    display: table-row;
+}
+
+.divTableRow:hover {
+    background-color: #000;
+    color: #000;
+    border: 3px;
+    background-color: rgba(52, 73, 94, .7);
+}
+
+.divTableBody {
+    display: table-row-group;
+    padding: 10px;
+    border: 0;
+    background-color: #37aaed;
+    color: white;
+}
+
+.divTableCell {
+    display: table-cell;
+    padding: 3px 10px;
+    width: auto;
+}
+
+#tablaGV #td1 {
+    background: #41C2E9;
+}
+
+
+/*Estilo tabla agregar producto a venta*/
+
+#tablaV {
+    font-family: font-alt mb-40 titan-title-size-4;
+    width: 100PX;
+    height: auto;
+    background: #41C2E9;
+    border: 0;
+    font-size: 15px;
+    border-collapse: collapse;
+}
+
+#tablaV td, #customers th {
+    padding: 10px;
+    border: 0;
+    width: auto;
+}
+
+#tablaV tr:nth-child(even) {
+    background-color: #41C2E9;
+}
+
+#tablaV tr:hover {
+    background-color: #000;
+    color: #000;
+    border: 3px;
+    background-color: rgba(52, 73, 94, .7);
+}
+
+#tablaV th {
+    padding: 10px;
+    border: 0;
+    background-color: #37aaed;
+    color: white;
+}
+
+#btnCantidad {
+    border: 1px solid #DBE1EB;
+    font-size: 13px;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    max-width: 50px;
+    max-height: 10px;
+}
+
+#tablaGV {
+    font-family: font-alt mb-40 titan-title-size-4;
+    width: 600PX;
+    height: auto;
+    background: #41C2E9;
+    border: 0;
+    font-size: 15px;
+    border-collapse: collapse;
+}
+
+#tablaGV td, #customers th {
+    padding: 10px;
+    border: 0;
+    width: auto;
+}
+
+#tablaGV tr:nth-child(even) {
+    background-color: #41C2E9;
+}
+
+#tablaGV tr:hover {
+    background-color: #000;
+    color: #000;
+    border: 3px;
+    background-color: rgba(52, 73, 94, .7);
+}
+
+#tablaGV th {
+    padding: 10px;
+    border: 0;
+    background-color: #37aaed;
+    color: white;
+}
+
+#BtnVenta {
+    transform: scale(1.1);
+    border: #000;
+    cursor: pointer;
+}
